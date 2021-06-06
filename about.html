@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 95vh;
+    }
+
+    .about_img{
+        min-width: 100%;
+        max-height: 280px;
+    }
+    .container.services img {
+        height: 223px !important;
+        width: 100%;
+    }
+    .videos{
+      background: #a6dcef;
+    }
+    .navbar-collapse {
+      flex-grow: 0 !important;
+    }
+    .bg-secondary p {
+    margin-bottom: 0 !important;
+    }
+    .scroll_spy{
+      position: relative;
+    }
+
+</style>
+</head>
+<body>
+   <header>
+       
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-capitalize" href="#">navbar logo</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse right_item" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" href="about.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" href="gallery.html">gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" href="contact.html">contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="main-heading">
+        <div class="text-center">
+            <h1 class="display-4">About us</h1>
+            <hr class="w-25 mx-auto">
+        </div>  
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+                    <figure>
+                        <img src="banner.jpg" alt="" class="img-fluid about_img">
+                    </figure>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-start flex-column">
+                    <h1>My Journey</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veniam aspernatur ullam porro eum quaerat nobis consequuntur doloremque minus iste quas eius, voluptatem repellendus placeat dolor aliquid quibusdam quia nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <button type="button" class="btn btn-outline-info">Check More</button>
+                </div>
+            </div>
+        </div> 
+        <div class="container">
+            <div class="row">
+              <div class="scroll_spy">
+                <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#scrollspyHeading1">First</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+                <div data-bs-spy="scroll" style="height:300px; overflow-y:scroll;" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                  <h4 id="scrollspyHeading1">First heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod praesentium, quidem dicta sunt ab exercitationem. Necessitatibus, aspernatur? Neque, ut! Atque nostrum laboriosam voluptatem velit optio a pariatur, aut aspernatur cumque facere deleniti commodi reprehenderit nam tempore vero delectus omnis officia perferendis ad minus praesentium fuga et? Itaque maiores perspiciatis libero pariatur, harum porro quo repudiandae, id neque mollitia magni accusantium, perferendis nobis explicabo quam! Velit esse dicta eligendi sed maiores dolorem delectus soluta incidunt! Consequatur, unde? Beatae eveniet dolores vitae voluptatibus dolor aspernatur error iste? Autem itaque sequi adipisci similique corporis facilis tempora velit eum quo accusamus minus nulla, repellendus culpa accusantium natus, dignissimos, quis consequatur dolorum aliquam quos praesentium dicta sit consectetur! Excepturi minima quam repudiandae quibusdam totam numquam, voluptatem dicta aspernatur nobis, asperiores maiores tenetur praesentium a nemo assumenda quod. Mollitia reiciendis quibusdam eum consectetur quae? Voluptas qui et, iure accusamus expedita ipsum error itaque fuga facilis ipsam tempore corrupti minima culpa perferendis voluptate quis, repellat eaque quibusdam. At sint dolore quos quod qui. Assumenda ipsa saepe rerum velit incidunt. Perferendis, praesentium reiciendis. Pariatur quasi aperiam ut voluptatibus repellendus excepturi ex cupiditate sit, repudiandae voluptas quibusdam fuga et beatae eum vel! Repellendus laudantium quod quo? Laboriosam, commodi!</p>
+                  <h4 id="scrollspyHeading2">Second heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod praesentium, quidem dicta sunt ab exercitationem. Necessitatibus, aspernatur? Neque, ut! Atque nostrum laboriosam voluptatem velit optio a pariatur, aut aspernatur cumque facere deleniti commodi reprehenderit nam tempore vero delectus omnis officia perferendis ad minus praesentium fuga et? Itaque maiores perspiciatis libero pariatur, harum porro quo repudiandae, id neque mollitia magni accusantium, perferendis nobis explicabo quam! Velit esse dicta eligendi sed maiores dolorem delectus soluta incidunt! Consequatur, unde? Beatae eveniet dolores vitae voluptatibus dolor aspernatur error iste? Autem itaque sequi adipisci similique corporis facilis tempora velit eum quo accusamus minus nulla, repellendus culpa accusantium natus, dignissimos, quis consequatur dolorum aliquam quos praesentium dicta sit consectetur! Excepturi minima quam repudiandae quibusdam totam numquam, voluptatem dicta aspernatur nobis, asperiores maiores tenetur praesentium a nemo assumenda quod. Mollitia reiciendis quibusdam eum consectetur quae? Voluptas qui et, iure accusamus expedita ipsum error itaque fuga facilis ipsam tempore corrupti minima culpa perferendis voluptate quis, repellat eaque quibusdam. At sint dolore quos quod qui. Assumenda ipsa saepe rerum velit incidunt. Perferendis, praesentium reiciendis. Pariatur quasi aperiam ut voluptatibus repellendus excepturi ex cupiditate sit, repudiandae voluptas quibusdam fuga et beatae eum vel! Repellendus laudantium quod quo? Laboriosam, commodi!</p>
+                  <h4 id="scrollspyHeading3">Third heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod praesentium, quidem dicta sunt ab exercitationem. Necessitatibus, aspernatur? Neque, ut! Atque nostrum laboriosam voluptatem velit optio a pariatur, aut aspernatur cumque facere deleniti commodi reprehenderit nam tempore vero delectus omnis officia perferendis ad minus praesentium fuga et? Itaque maiores perspiciatis libero pariatur, harum porro quo repudiandae, id neque mollitia magni accusantium, perferendis nobis explicabo quam! Velit esse dicta eligendi sed maiores dolorem delectus soluta incidunt! Consequatur, unde? Beatae eveniet dolores vitae voluptatibus dolor aspernatur error iste? Autem itaque sequi adipisci similique corporis facilis tempora velit eum quo accusamus minus nulla, repellendus culpa accusantium natus, dignissimos, quis consequatur dolorum aliquam quos praesentium dicta sit consectetur! Excepturi minima quam repudiandae quibusdam totam numquam, voluptatem dicta aspernatur nobis, asperiores maiores tenetur praesentium a nemo assumenda quod. Mollitia reiciendis quibusdam eum consectetur quae? Voluptas qui et, iure accusamus expedita ipsum error itaque fuga facilis ipsam tempore corrupti minima culpa perferendis voluptate quis, repellat eaque quibusdam. At sint dolore quos quod qui. Assumenda ipsa saepe rerum velit incidunt. Perferendis, praesentium reiciendis. Pariatur quasi aperiam ut voluptatibus repellendus excepturi ex cupiditate sit, repudiandae voluptas quibusdam fuga et beatae eum vel! Repellendus laudantium quod quo? Laboriosam, commodi!</p>
+                  <h4 id="scrollspyHeading4">Fourth heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod praesentium, quidem dicta sunt ab exercitationem. Necessitatibus, aspernatur? Neque, ut! Atque nostrum laboriosam voluptatem velit optio a pariatur, aut aspernatur cumque facere deleniti commodi reprehenderit nam tempore vero delectus omnis officia perferendis ad minus praesentium fuga et? Itaque maiores perspiciatis libero pariatur, harum porro quo repudiandae, id neque mollitia magni accusantium, perferendis nobis explicabo quam! Velit esse dicta eligendi sed maiores dolorem delectus soluta incidunt! Consequatur, unde? Beatae eveniet dolores vitae voluptatibus dolor aspernatur error iste? Autem itaque sequi adipisci similique corporis facilis tempora velit eum quo accusamus minus nulla, repellendus culpa accusantium natus, dignissimos, quis consequatur dolorum aliquam quos praesentium dicta sit consectetur! Excepturi minima quam repudiandae quibusdam totam numquam, voluptatem dicta aspernatur nobis, asperiores maiores tenetur praesentium a nemo assumenda quod. Mollitia reiciendis quibusdam eum consectetur quae? Voluptas qui et, iure accusamus expedita ipsum error itaque fuga facilis ipsam tempore corrupti minima culpa perferendis voluptate quis, repellat eaque quibusdam. At sint dolore quos quod qui. Assumenda ipsa saepe rerum velit incidunt. Perferendis, praesentium reiciendis. Pariatur quasi aperiam ut voluptatibus repellendus excepturi ex cupiditate sit, repudiandae voluptas quibusdam fuga et beatae eum vel! Repellendus laudantium quod quo? Laboriosam, commodi!</p>
+                  <h4 id="scrollspyHeading5">Fifth heading</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod praesentium, quidem dicta sunt ab exercitationem. Necessitatibus, aspernatur? Neque, ut! Atque nostrum laboriosam voluptatem velit optio a pariatur, aut aspernatur cumque facere deleniti commodi reprehenderit nam tempore vero delectus omnis officia perferendis ad minus praesentium fuga et? Itaque maiores perspiciatis libero pariatur, harum porro quo repudiandae, id neque mollitia magni accusantium, perferendis nobis explicabo quam! Velit esse dicta eligendi sed maiores dolorem delectus soluta incidunt! Consequatur, unde? Beatae eveniet dolores vitae voluptatibus dolor aspernatur error iste? Autem itaque sequi adipisci similique corporis facilis tempora velit eum quo accusamus minus nulla, repellendus culpa accusantium natus, dignissimos, quis consequatur dolorum aliquam quos praesentium dicta sit consectetur! Excepturi minima quam repudiandae quibusdam totam numquam, voluptatem dicta aspernatur nobis, asperiores maiores tenetur praesentium a nemo assumenda quod. Mollitia reiciendis quibusdam eum consectetur quae? Voluptas qui et, iure accusamus expedita ipsum error itaque fuga facilis ipsam tempore corrupti minima culpa perferendis voluptate quis, repellat eaque quibusdam. At sint dolore quos quod qui. Assumenda ipsa saepe rerum velit incidunt. Perferendis, praesentium reiciendis. Pariatur quasi aperiam ut voluptatibus repellendus excepturi ex cupiditate sit, repudiandae voluptas quibusdam fuga et beatae eum vel! Repellendus laudantium quod quo? Laboriosam, commodi!</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+    </section>
+
+    
+
+    <footer class="bg-secondary text-center text-white">
+        <p>@copyright Website Company</p>
+      </footer> 
+      
+      
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+      </body>
+      </html>
